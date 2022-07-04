@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apec Group </title>
+    <title>Apec Group Career</title>
     <!-- <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/img/logo.jpg"> -->
     <link rel="icon" href="./assets/img/logo.jpg">
 
@@ -13,6 +13,10 @@
 
     <!-- Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -91,7 +95,7 @@
             <img src="./assets/img/headerBackground.png">
         </div>
     </div>
-    <div class="header-mini">
+    <div class="header-mini" data-aos="fade-right">
         <span>APEC Group</span>
         <h1>Nhân tài - Phụng sự - Hạnh phúc</h1>
         <div class="header-mini-child">
@@ -102,7 +106,47 @@
             <a href="https://apecgroup.net/" target="1" class="header-looking-search">
                 <p>Tìm hiểu thêm</p>
                 <div class="header-search">
-                    <img src="./assets/img/search.svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path opacity="0.15" d="M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" fill="#0C3050"/>
+                        <path d="M19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L19.4697 20.5303ZM17.25 10.5C17.25 14.2279 14.2279 17.25 10.5 17.25V18.75C15.0563 18.75 18.75 15.0563 18.75 10.5H17.25ZM10.5 17.25C6.77208 17.25 3.75 14.2279 3.75 10.5H2.25C2.25 15.0563 5.94365 18.75 10.5 18.75V17.25ZM3.75 10.5C3.75 6.77208 6.77208 3.75 10.5 3.75V2.25C5.94365 2.25 2.25 5.94365 2.25 10.5H3.75ZM10.5 3.75C14.2279 3.75 17.25 6.77208 17.25 10.5H18.75C18.75 5.94365 15.0563 2.25 10.5 2.25V3.75ZM20.5303 19.4697L16.3428 15.2821L15.2821 16.3428L19.4697 20.5303L20.5303 19.4697Z" fill="#0C3050"/>
+                        <!-- Code injected by live-server -->
+                        <script type="text/javascript">
+                            // <![CDATA[  <-- For SVG support
+                            if ('WebSocket' in window) {
+                                (function () {
+                                    function refreshCSS() {
+                                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                        var head = document.getElementsByTagName("head")[0];
+                                        for (var i = 0; i < sheets.length; ++i) {
+                                            var elem = sheets[i];
+                                            var parent = elem.parentElement || head;
+                                            parent.removeChild(elem);
+                                            var rel = elem.rel;
+                                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                            }
+                                            parent.appendChild(elem);
+                                        }
+                                    }
+                                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                    var socket = new WebSocket(address);
+                                    socket.onmessage = function (msg) {
+                                        if (msg.data == 'reload') window.location.reload();
+                                        else if (msg.data == 'refreshcss') refreshCSS();
+                                    };
+                                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                        console.log('Live reload enabled.');
+                                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                    }
+                                })();
+                            }
+                            else {
+                                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                            }
+                            // ]]>
+                        </script></svg>
                 </div>
             </a>
         </div>
@@ -111,7 +155,7 @@
 
 <!-- Wrapper -->
 <section class="wrapper">
-    <div id="tp-apec" class="wrapper-intro">
+    <div id="tp-apec" class="wrapper-intro" data-aos="zoom-in">
         <h2>Thành phố APEC Group</h2>
         <h1>Thành phố của những ước mơ sáng tạo & cống hiến</h1>
     </div>
@@ -122,7 +166,7 @@
     <!-- Wrapper group -->
     <div id="apec-group" class="wrapper-group">
         <div class="wrapper-group-left">
-            <img src="./assets/img/slideshowBackground.png">
+            <img data-aos="fade-right" src="./assets/img/slideshowBackground.png">
         </div>
         <div class="wrapper-group-right">
             <div class="slideshow-container">
@@ -170,9 +214,9 @@
     </div>
     <!-- Wrapper garden -->
     <div id="garden-group" class="wrapper-garden">
-        <p>Vườn APEC</p>
-        <h3>Vườn ươm hạt giống thiện lành</h3>
-        <div class="wrapper-garden-apec">
+        <p data-aos="zoom-in">Vườn APEC</p>
+        <h3 data-aos="zoom-in">Vườn ươm hạt giống thiện lành</h3>
+        <div class="wrapper-garden-apec"  data-aos="fade-up">
             <a href="https://apecgroup.net/tin-tuc/khuc-hat-ve-nguoi-apec-va-cau-chuyen-nho-cua-toi.html">
                 <div class="wrapper-garden-info">
                     <div class="img-garden">
@@ -210,7 +254,47 @@
         <div class="wrapper-garden-btn">
             <a href="https://apecgroup.net/cong-dong-apec.html">
                 <button> Khám phá thêm
-                    <img src="./assets/img/search.svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path opacity="0.15" d="M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" fill="#0C3050"/>
+                        <path d="M19.4697 20.5303C19.7626 20.8232 20.2374 20.8232 20.5303 20.5303C20.8232 20.2374 20.8232 19.7626 20.5303 19.4697L19.4697 20.5303ZM17.25 10.5C17.25 14.2279 14.2279 17.25 10.5 17.25V18.75C15.0563 18.75 18.75 15.0563 18.75 10.5H17.25ZM10.5 17.25C6.77208 17.25 3.75 14.2279 3.75 10.5H2.25C2.25 15.0563 5.94365 18.75 10.5 18.75V17.25ZM3.75 10.5C3.75 6.77208 6.77208 3.75 10.5 3.75V2.25C5.94365 2.25 2.25 5.94365 2.25 10.5H3.75ZM10.5 3.75C14.2279 3.75 17.25 6.77208 17.25 10.5H18.75C18.75 5.94365 15.0563 2.25 10.5 2.25V3.75ZM20.5303 19.4697L16.3428 15.2821L15.2821 16.3428L19.4697 20.5303L20.5303 19.4697Z" fill="#0C3050"/>
+                        <!-- Code injected by live-server -->
+                        <script type="text/javascript">
+                            // <![CDATA[  <-- For SVG support
+                            if ('WebSocket' in window) {
+                                (function () {
+                                    function refreshCSS() {
+                                        var sheets = [].slice.call(document.getElementsByTagName("link"));
+                                        var head = document.getElementsByTagName("head")[0];
+                                        for (var i = 0; i < sheets.length; ++i) {
+                                            var elem = sheets[i];
+                                            var parent = elem.parentElement || head;
+                                            parent.removeChild(elem);
+                                            var rel = elem.rel;
+                                            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                                elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                            }
+                                            parent.appendChild(elem);
+                                        }
+                                    }
+                                    var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                                    var address = protocol + window.location.host + window.location.pathname + '/ws';
+                                    var socket = new WebSocket(address);
+                                    socket.onmessage = function (msg) {
+                                        if (msg.data == 'reload') window.location.reload();
+                                        else if (msg.data == 'refreshcss') refreshCSS();
+                                    };
+                                    if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                                        console.log('Live reload enabled.');
+                                        sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                                    }
+                                })();
+                            }
+                            else {
+                                console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                            }
+                            // ]]>
+                        </script></svg>
                 </button>
             </a>
         </div>
@@ -218,17 +302,17 @@
     <!-- Wrapper form -->
     <div id="link-apec" class="form">
         <div class="form-box-img">
-            <img class="form-img-1" src="./assets/img/Frame-1.png">
-            <img class="form-img-2" src="./assets/img/Frame-2.png">
+            <img class="form-img-1" data-aos="fade-down-right" src="./assets/img/Frame-1.png">
+            <img class="form-img-2" data-aos="fade-down" src="./assets/img/Frame-2.png">
         </div>
         <div class="form-box-img">
-            <img class="form-img-3" src="./assets/img/Frame-3.png">
-            <img class="form-img-4" src="./assets/img/Frame-4.png">
+            <img class="form-img-3" data-aos="zoom-in" src="./assets/img/Frame-3.png">
+            <img class="form-img-4" data-aos="zoom-in" src="./assets/img/Frame-4.png">
         </div>
         <div class="form-container">
-            <h3 class="form-text-item">FORM ỨNG TUYỂN</h3>
-            <h4 class="form-header">Trở thành thành viên của APEC</h4>
-            <div class="form-box">
+            <h3 class="form-text-item" data-aos="zoom-in">FORM ỨNG TUYỂN</h3>
+            <h4 class="form-header" data-aos="zoom-in">Trở thành thành viên của APEC</h4>
+            <div class="form-box" data-aos="zoom-in">
                 <div class="form-box-list">
                     <form>
                         <div class="form-list-input">

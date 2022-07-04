@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-padding-top: 90px;
+}
+
 /*Share */
 @font-face {
     font-family: myFont;
@@ -242,6 +246,9 @@ button {
 .header-looking:hover a {
     color: #ffffff;
 }
+.header-looking:hover path{
+    fill: #fff;
+}
 .ItemMenuMobile {
     display: none;
 }
@@ -249,9 +256,7 @@ button {
 /* Wrapper */
 
 /* Wrapper-intro */
-.wrapper-intro {
-    padding-top: 48px;
-}
+
 
 .wrapper-intro h2 {
     font-size: 24px;
@@ -434,14 +439,14 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.wrapper-garden-btn img {
-    vertical-align: middle;
-    border-style: none;
-    padding-left: 10px;
+    cursor: pointer;
+    gap: 16px;
 }
 .wrapper-garden-btn button:hover {
     background: #597487;
+}
+.wrapper-garden-btn path{
+  fill: #fff;
 }
 
 /* Form */
@@ -775,7 +780,7 @@ button {
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
     .header-main {
-        padding: 26px 30px;
+        padding: 25px 30px;
         justify-content: space-between;
     }
     .header-main img {
@@ -887,7 +892,7 @@ button {
 /* Mobile */
 @media (max-width: 46.1875em) {
     .header-main {
-        padding: 26px 16px;
+        padding: 25px 16px;
         justify-content: space-between;
     }
     .header-main img {

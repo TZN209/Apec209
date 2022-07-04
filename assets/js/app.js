@@ -1,4 +1,7 @@
 
+// AOS
+AOS.init();
+
 // Show menu
 
 function showMenu(){
